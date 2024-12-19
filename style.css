@@ -1,0 +1,401 @@
+/* Style global pour donner une ambiance élégante et mystérieuse */
+body {
+    background-color: #2c2a35; /* Fond sombre mais pas complètement noir */
+    color: #e4e0ef; /* Texte clair et élégant */
+    font-family: 'Poppins', sans-serif; /* Police moderne et féminine */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Style des liens */
+a {
+    color: #f09ac7; /* Rose pastel élégant */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b8589d; /* Couleur légèrement plus foncée pour l'effet hover */
+}
+
+a:focus {
+    color: #b8589d; /* Couleur rose foncé quand l'élément a le focus */
+}
+
+/* Style spécifique pour le lien actif */
+a.active {
+    color: #b8589d; /* Rose foncé pour l'élément actif */
+}
+
+/* En-tête */
+header {
+    background-color: #1f1c29; /* Couleur plus sombre pour contraste */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #f09ac7;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Menu de navigation */
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #3b3747;
+    color: #e4e0ef;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f09ac7;
+    color: #1f1c29;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section principale */
+section {
+    padding: 50px;
+    background-color: #2c2a35;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease;
+}
+
+section h2 {
+    color: #f09ac7;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* Boutons */
+button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px auto;
+    background-color: #f09ac7;
+    color: #1f1c29;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #b8589d;
+    color: #e4e0ef;
+}
+
+/* Pied de page */
+footer {
+    background-color: #1f1c29;
+    padding: 15px;
+    text-align: center;
+    color: #e4e0ef;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f09ac7;
+}
+
+footer a:hover {
+    color: #b8589d;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #3b3747;
+    border-radius: 10px;
+    background-color: #2c2a35;
+    color: #e4e0ef;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #f09ac7;
+    outline: none;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #3b3747;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1f1c29;
+    color: #f09ac7;
+}
+
+table tr:nth-child(even) {
+    background-color: #3b3747;
+}
+
+table tr:hover {
+    background-color: #f09ac7;
+    color: #1f1c29;
+}
+/* Styles spécifiques pour la page Passions */
+
+/* Titre de la page */
+.page-title {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #d27ccc; /* Violet royal */
+    margin-bottom: 20px;
+}
+
+.page-title h1 {
+    font-size: 2.5em;
+    color: #fab1a0; /* Rose doux */
+}
+
+.page-title p {
+    font-size: 1.2em;
+    color: #dfe6e9; /* Gris clair */
+}
+
+/* Liste des passions */
+.passions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.passion {
+    background: #c25fd6;
+    border: 2px solid #f807c0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.passion h2 {
+    color: #2f0523;
+    margin-bottom: 10px;
+}
+
+.passion p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+/* Style des icônes de réseaux sociaux */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 30px; /* Taille de l'icône */
+    margin: 0 15px;  /* Espacement entre les icônes */
+    color: #333;     /* Couleur des icônes */
+    text-decoration: none; /* Enlever le soulignement */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Changer la couleur au survol */
+    transition: color 0.3s ease;
+}
+
+.social-icons a.fa-facebook {
+    color: #3b5998; /* Couleur spécifique à Facebook */
+}
+
+.social-icons a.fa-instagram {
+    color: #E1306C; /* Couleur spécifique pour Instagram */
+    font-size: 2em;  /* Taille de l'icône */
+    margin: 10px;    /* Espacement entre les icônes */
+    transition: color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+.social-icons a.fa-snapchat {
+    color: #FFFC00; /* Couleur spécifique pour Snapchat */
+    font-size: 2em;  /* Taille de l'icône */
+    margin: 10px;    /* Espacement entre les icônes */
+    transition: color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+.bio {
+    text-align: center; /* Centrer le contenu */
+    padding: 20px; /* Ajouter un peu d'espace autour de la section */
+}
+
+.bio img {
+    width: 150px; /* Taille initiale de l'image */
+    height: 150px; /* Taille initiale de l'image */
+    border-radius: 50%; /* Rendre l'image ronde, ce qui lui donne la forme d'un œuf */
+    transition: transform 0.3s ease, scale 0.3s ease; /* Transition pour l'agrandissement et l'effet de survol */
+    object-fit: cover; /* S'assurer que l'image couvre complètement le cercle sans déformation */
+}
+
+.bio img:hover {
+    transform: scale(1.1); /* Augmenter légèrement la taille de l'image au survol */
+}
+
+.bio p {
+    margin-top: 15px; /* Ajouter de l'espace entre l'image et le texte */
+    font-size: 1.2em; /* Ajuster la taille du texte */
+    color: #f5c6f0; /* Couleur du texte */
+}
+
+/* Style général pour centrer les images dans la section des événements */
+.manifestation img {
+    width: 300px; /* Taille de base de l'image */
+    height: 250px; /* Taille de base de l'image */
+    border-radius: 50%; /* Forme d'œuf (arrondi) */
+    object-fit: cover; /* L'image couvre le cercle sans déformation */
+    transition: transform 0.3s ease; /* Transition fluide pour l'effet de survol */
+    display: block; /* S'assurer que l'image se comporte comme un bloc */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+}
+
+.manifestation img:hover {
+    transform: scale(1.1); /* Agrandir l'image de 10% au survol */
+}
+
+/* Résultat - Style dynamique et mystérieux */
+#resultat {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #e4e0ef;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #3b3747;
+    background: linear-gradient(145deg, #3b3747, #2c2a35); /* Effet mystérieux */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), inset 0px 2px 5px rgba(255, 255, 255, 0.1);
+    display: none; /* Caché au départ */
+    border-radius: 15px;
+    opacity: 0; /* Animation pour le suspense */
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Animation d'apparition calme */
+@keyframes calme {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de la bonne et mauvaise réponse */
+.reponse {
+    margin: 10px 0;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.correcte {
+    color: green;
+    font-weight: bold;
+}
+
+.mauvaise {
+    color: red;
+    font-weight: bold;
+}
+
+#resultat.visible {
+    display: block;
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Amener à la position initiale */
+    animation: calme 1.5s ease-in-out forwards; /* Animation calme pour un effet de suspense */
+}
+
+.reponse.visible {
+    opacity: 1; /* Apparition fluide */
+    transform: scale(1); /* Effet d'agrandissement subtil */
+}
+
+/* Ajout d'un effet calme pour la note */
+#note {
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: #FF66B2; /* Couleur rose */
+    opacity: 0;  /* La note sera cachée au début */
+    transform: translateY(20px);  /* L'animation de la note */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#note.visible {
+    opacity: 1;  /* La note devient visible */
+    transform: translateY(0);  /* Elle arrive à sa position */
+}
+
+
+
+
